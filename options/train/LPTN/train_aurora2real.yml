@@ -7,18 +7,18 @@ manual_seed: 10
 # dataset and data loader settings
 datasets:
   train:
-    name: FiveK
+    name: aurora2real
     type: UnPairedImageDataset
     # (for disk)
 #    dataroot_gt: datasets/FiveK/FiveK_480p/train/B
 #    dataroot_lq: datasets/FiveK/FiveK_480p/train/A
     # (for lmdb)
-    dataroot_gt: /content/drive/MyDrive/colab/stylegan2/datasets/aurora1024
-    dataroot_lq: /content/drive/MyDrive/colab/stylegan2/datasets/aurora1024sg
+    dataroot_gt: /content/drive/MyDrive/colab/stylegan2/datasets/aurora1024.lmdb
+    dataroot_lq: /content/drive/MyDrive/colab/stylegan2/datasets/aurora1024sg.lmdb
     filename_tmpl: '{}'
     io_backend:
-       type: disk
-         #type: lmdb
+      #type: disk
+      type: lmdb
 
     if_fix_size: true # training will be slower if the data shape not fixed (both num_gpu and batch_size need to be 1)
     gt_size: 256 # training size

@@ -4,23 +4,33 @@ from codes.utils.lmdb_util import make_lmdb_from_imgs
 
 def create_lmdb():
 
-    folder_path = 'datasets/FiveK/FiveK_480p/train/A'
-    lmdb_path = 'datasets/FiveK/FiveK_train_source.lmdb'
+    #folder_path = 'datasets/FiveK/FiveK_480p/train/A'
+    #lmdb_path = 'datasets/FiveK/FiveK_train_source.lmdb'
+    #img_path_list, keys = prepare_keys(folder_path)
+    #make_lmdb_from_imgs(folder_path, lmdb_path, img_path_list, keys)
+
+    #folder_path = 'datasets/FiveK/FiveK_480p/train/B'
+    #lmdb_path = 'datasets/FiveK/FiveK_train_target.lmdb'
+    #img_path_list, keys = prepare_keys(folder_path)
+    #make_lmdb_from_imgs(folder_path, lmdb_path, img_path_list, keys)
+
+    #folder_path = 'datasets/FiveK/FiveK_480p/test/A'
+    #lmdb_path = 'datasets/FiveK/FiveK_test_source.lmdb'
+    #img_path_list, keys = prepare_keys(folder_path)
+    #make_lmdb_from_imgs(folder_path, lmdb_path, img_path_list, keys)
+
+    #folder_path = 'datasets/FiveK/FiveK_480p/test/B'
+    #lmdb_path = 'datasets/FiveK/FiveK_test_target.lmdb'
+    #img_path_list, keys = prepare_keys(folder_path)
+    #make_lmdb_from_imgs(folder_path, lmdb_path, img_path_list, keys)
+
+    folder_path = "/content/drive/MyDrive/colab/stylegan2/datasets/aurora1024"
+    lmdb_path = folder_path + ".lmdb"
     img_path_list, keys = prepare_keys(folder_path)
     make_lmdb_from_imgs(folder_path, lmdb_path, img_path_list, keys)
 
-    folder_path = 'datasets/FiveK/FiveK_480p/train/B'
-    lmdb_path = 'datasets/FiveK/FiveK_train_target.lmdb'
-    img_path_list, keys = prepare_keys(folder_path)
-    make_lmdb_from_imgs(folder_path, lmdb_path, img_path_list, keys)
-
-    folder_path = 'datasets/FiveK/FiveK_480p/test/A'
-    lmdb_path = 'datasets/FiveK/FiveK_test_source.lmdb'
-    img_path_list, keys = prepare_keys(folder_path)
-    make_lmdb_from_imgs(folder_path, lmdb_path, img_path_list, keys)
-
-    folder_path = 'datasets/FiveK/FiveK_480p/test/B'
-    lmdb_path = 'datasets/FiveK/FiveK_test_target.lmdb'
+    folder_path = "/content/drive/MyDrive/colab/stylegan2/datasets/aurora1024sg"
+    lmdb_path = folder_path + ".lmdb"
     img_path_list, keys = prepare_keys(folder_path)
     make_lmdb_from_imgs(folder_path, lmdb_path, img_path_list, keys)
 
