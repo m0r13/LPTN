@@ -13,8 +13,8 @@ datasets:
 #    dataroot_gt: datasets/FiveK/FiveK_480p/train/B
 #    dataroot_lq: datasets/FiveK/FiveK_480p/train/A
     # (for lmdb)
-    dataroot_gt: /content/drive/MyDrive/colab/stylegan2/datasets/aurora1024.lmdb
-    dataroot_lq: /content/drive/MyDrive/colab/stylegan2/datasets/aurora1024sg.lmdb
+    dataroot_gt: /content/aurora1024.lmdb
+    dataroot_lq: /content/aurora1024sg.lmdb
     filename_tmpl: '{}'
     io_backend:
       #type: disk
