@@ -39,6 +39,8 @@ def prepare_keys(folder_path):
     print('Reading image path list ...')
     img_path_list = sorted(
         list(scandir(folder_path, suffix='jpg', recursive=False)))
+    ######## USE ONLY FIRST 1000
+    img_path_list = img_path_list[:1000]
     keys = [img_path.split('.jpg')[0] for img_path in sorted(img_path_list)]
 
     return img_path_list, keys
