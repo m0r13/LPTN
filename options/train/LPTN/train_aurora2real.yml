@@ -33,9 +33,14 @@ datasets:
     prefetch_mode: cuda
     pin_memory: true
 
-  #val:
-  #  name: FiveK_val
-  #  type: PairedImageDataset
+  val:
+    name: aurora2real
+    type: UnPairedImageDataset
+    dataroot_gt: /content/aurora1024.lmdb
+    dataroot_lq: /content/aurora1024sg.lmdb
+    filename_tmpl: '{}'
+    io_backend:
+      #    type: PairedImageDataset
 #    dataroot_gt: datasets/FiveK/FiveK_480p/test/B
 #    dataroot_lq: datasets/FiveK/FiveK_480p/test/A
 #  dataroot_gt: datasets/FiveK/FiveK_test_target.lmdb
@@ -56,9 +61,9 @@ network_d:
 
 # path
 path:
-  pretrain_network_g: ~
-  strict_load_g: false
-  resume_state: ~
+  pretrain_network_g: experiments/LPTN_aurora2real/models/net_g_5000.pth
+  strict_load_g: true
+  resume_state: experiments/LPTN_aurora2real/training_states/5000.state
 
 # training settings
 train:
