@@ -106,7 +106,7 @@ train:
 
 # validation settings
 val:
-  val_freq: 500 #!!float 5e3
+  val_freq: 2000 #!!float 5e3
   save_img: true
 
   metrics:
