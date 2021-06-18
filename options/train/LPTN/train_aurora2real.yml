@@ -62,9 +62,9 @@ network_d:
 
 # path
 path:
-  pretrain_network_g: experiments/LPTN_aurora2real/models/net_g_5000.pth
+  pretrain_network_g: ~ # experiments/LPTN_aurora2real/models/net_g_5000.pth
   strict_load_g: true
-  resume_state: experiments/LPTN_aurora2real/training_states/5000.state
+  resume_state: ~ # experiments/LPTN_aurora2real/training_states/5000.state
 
 # training settings
 train:
