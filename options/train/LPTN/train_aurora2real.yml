@@ -37,7 +37,7 @@ datasets:
     name: aurora2real
     type: UnPairedImageDataset
     dataroot_gt: /content/aurora1024.lmdb
-    dataroot_lq: /content/aurora1024sg.lmdb
+    dataroot_lq: /content/aurora1024sg_small.lmdb
     filename_tmpl: '{}'
     io_backend:
       type: lmdb
