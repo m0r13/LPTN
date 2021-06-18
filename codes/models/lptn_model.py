@@ -216,7 +216,7 @@ class LPTNModel(BaseModel):
                     plot_img = np.hstack((plot_img, gt_img))
                 imwrite(plot_img, save_img_path)
 
-            if with_metrics:
+            if with_metrics and "gt" in visuals:
                 # calculate metrics
                 opt_metric = deepcopy(self.opt['val']['metrics'])
                 for name, opt_ in opt_metric.items():
