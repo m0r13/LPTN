@@ -32,7 +32,7 @@ def create_lmdb():
     folder_path = "/content/drive/MyDrive/colab/stylegan2/datasets/aurora1024sg"
     lmdb_path = folder_path + ".lmdb"
     img_path_list, keys = prepare_keys(folder_path)
-    make_lmdb_from_imgs(folder_path, lmdb_path, img_path_list, keys)
+    #make_lmdb_from_imgs(folder_path, lmdb_path, img_path_list, keys)
 
 def prepare_keys(folder_path):
 
@@ -40,7 +40,7 @@ def prepare_keys(folder_path):
     img_path_list = sorted(
         list(scandir(folder_path, suffix='jpg', recursive=False)))
     ######## USE ONLY FIRST 1000
-    img_path_list = img_path_list[:1000]
+    #img_path_list = img_path_list[:1000]
     keys = [img_path.split('.jpg')[0] for img_path in sorted(img_path_list)]
 
     return img_path_list, keys
