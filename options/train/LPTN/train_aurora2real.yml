@@ -40,6 +40,7 @@ datasets:
     dataroot_lq: /content/aurora1024sg.lmdb
     filename_tmpl: '{}'
     io_backend:
+      type: lmdb
       #    type: PairedImageDataset
 #    dataroot_gt: datasets/FiveK/FiveK_480p/test/B
 #    dataroot_lq: datasets/FiveK/FiveK_480p/test/A
