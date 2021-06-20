@@ -21,7 +21,7 @@ datasets:
       type: lmdb
 
     if_fix_size: true # training will be slower if the data shape not fixed (both num_gpu and batch_size need to be 1)
-    gt_size: 256 # training size
+    gt_size: 512 # training size
     use_flip: true
     use_rot: true
 
